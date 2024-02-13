@@ -1,0 +1,36 @@
+//Калькулятор
+#include<iostream>
+using namespace std;
+
+void main()
+{
+	setlocale(LC_ALL, "");
+	 
+	double a;
+	double b;
+	char operation;
+	cout << "Введите выражение: " << endl;
+	cin >> a >> operation >> b;
+
+	if (operation == '+')
+	{
+		cout << a << "+" << b << "=" << a + b << endl;
+	}
+	else if (operation == '-')
+	{
+		cout << a << "-" << b << "=" << a - b << endl;
+	}
+	else if (operation == '*')
+	{
+		cout << a << "*" << b << "=" << a*b << endl;
+	}
+	else if (operation == '/')
+	{
+		cout << a << "/" << b << "=" << a / b << endl;
+	}
+	else
+	{
+		cout << "Error" << endl;
+	}
+	main();
+}
